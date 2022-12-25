@@ -1,0 +1,75 @@
+{
+  "clientId": "1026265177676595302", // The id of the discord bot
+  "guildId": "894303057175789608", // The id of the discord server
+  "mainColor": "4B3621", // The hex color of the embeds by default
+  "lang": "main", // If you want to set english please set "main"
+
+
+  "openTicketChannelId": "1026274182905987144", // The id of the channel where the message to create a ticket will be sent
+  "ticketTypes": [ // You have a limit of 25 types (the limit of Discord)
+    {
+      "codeName": "questions", // The name need to be in lowercase
+      "name": "الاستفسارات", // The name that will be displayed in the ticket
+      "emoji": "💡", // The emoji of the type (can be blank)
+      "color": "#4B3621", // Can be a hex color or blank to use the main color
+      "categoryId": "972137602855620608",
+      "roletomentionId": "914860720540229662",	  // The category id where the tickets will be created
+      "customDescription": "عزيزي مواطن مدينة عرب نايت برجاء شرح موضوعك بكل تفصيل وانتظر رد الدعم الفني او المسؤول المختص.\nادارة عرب نايت في خدمتكم. .\n**-**\n**Reason:** REASON", // The custom description of the ticket type (set to blank to use the default description)
+      "askReason": true // If the bot should ask the reason of the ticket
+    },
+    {
+      "codeName": "develop", // The name need to be in lowercase
+      "name": "مشاكل برمجية", // The name that will be displayed in the ticket
+      "emoji": "🛠️", // The emoji of the type (can be blank)
+      "color": "#4B3621", // Can be a hex color or blank to use the main color
+      "categoryId": "972137602855620608",
+      "roletomentionId": "950730831339593739",	  // The category id where the tickets will be created
+      "customDescription": "عزيزي مواطن مدينة عرب نايت برجاء شرح موضوعك بكل تفصيل وانتظر رد الدعم الفني او المسؤول المختص.\nادارة عرب نايت في خدمتكم. .\n**-**\n**Reason:** REASON", // The custom description of the ticket type (set to blank to use the default description)
+      "askReason": true // If the bot should ask the reason of the ticket
+    },
+    {
+      "codeName": "banr", // The name need to be in lowercase
+      "name": "اعتراض بان", // The name that will be displayed in the ticket
+      "emoji": "🛑", // The emoji of the type (can be blank)
+      "color": "#4B3621", // Can be a hex color or blank to use the main color
+      "categoryId": "972137602855620608",
+      "roletomentionId": "966853625420873768",	  // The category id where the tickets will be created
+      "customDescription": "عزيزي مواطن مدينة عرب نايت برجاء شرح موضوعك بكل تفصيل وانتظر رد الدعم الفني او المسؤول المختص.\nادارة عرب نايت في خدمتكم. .\n**-**\n**Reason:** REASON", // The custom description of the ticket type (set to blank to use the default description)
+      "askReason": true // If the bot should ask the reason of the ticket
+    },
+	   {
+      "codeName": "carr", // The name need to be in lowercase
+      "name": "مشكلة في السيارات", // The name that will be displayed in the ticket
+      "emoji": "🚗", // The emoji of the type (can be blank)
+      "color": "#4B3621", // Can be a hex color or blank to use the main color
+      "categoryId": "972137602855620608",
+      "roletomentionId": "1055115141617827850",	  // The category id where the tickets will be created
+      "customDescription": "عزيزي مواطن مدينة عرب نايت برجاء شرح موضوعك بكل تفصيل وانتظر رد الدعم الفني او المسؤول المختص.\nادارة عرب نايت في خدمتكم. .\n**-**\n**Reason:** REASON", // The custom description of the ticket type (set to blank to use the default description)
+      "askReason": true // If the bot should ask the reason of the ticket
+    },
+		   {
+      "codeName": "shopr", // The name need to be in lowercase
+      "name": "المتجر", // The name that will be displayed in the ticket
+      "emoji": "🛒", // The emoji of the type (can be blank)
+      "color": "#4B3621", // Can be a hex color or blank to use the main color
+      "categoryId": "972137602855620608",
+      "roletomentionId": "913847232023920680",	  // The category id where the tickets will be created
+      "customDescription": "عزيزي مواطن مدينة عرب نايت شرائك للمنتج فهو دعم منك لنا لتقديم الافضل دائما برجاء شرح المطلوب وانتظار صاحب المتجر.\n**-**\n**Reason:** REASON", // The custom description of the ticket type (set to blank to use the default description)
+      "askReason": true // If the bot should ask the reason of the ticket
+    }
+	
+  ],
+  "ticketNameOption": "Ticket-TICKETCOUNT", // Here is all parameter: USERNAME, USERID, TICKETCOUNT
+  "rolesWhoHaveAccessToTheTickets": [
+    "966811733538791454"
+  ], // Roles who can access to the tickets
+  "pingRoleWhenOpened": true,
+  "roleToPingWhenOpenedId": "1026253689322733658", // The role to ping when a ticket is opened
+  "logs": true,
+  "logsChannelId": "1055120773653737482", // The id of the channel where the logs will be sent
+  "claimButton": true,
+  "whoCanCloseTicket": "EVERYONE", // STAFFONLY (roles configured at "rolesWhoHaveAccessToTheTickets") or EVERYONE
+  "closeButton": true, // If false the ticket can be closed only by doing /closes
+  "askReasonWhenClosing": false, // If false the ticket will be closed without asking the reason
+  "maxTicketOpened": 1 // The number of tickets the user can open while another one is already open. Set to 0 to unlimited
+}
